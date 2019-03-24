@@ -3,14 +3,15 @@ package dominio;
 public class Cadastro {
 
 	private String cnpj;
-	private String senha;
 	private String email;
-	
-	public String getSenha() {
-		return senha;
+	private String senha;
+	private String confSenha;
+	private int codFornecedor;
+	public String getCnpj() {
+		return cnpj;
 	}
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 	public String getEmail() {
 		return email;
@@ -18,21 +19,25 @@ public class Cadastro {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	private String confirmaSenha;
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public String getConfSenha() {
+		return confSenha;
+	}
+	public void setConfSenha(String confSenha) {
+		this.confSenha = confSenha;
+	}
+	public int getCodFornecedor() {
+		return codFornecedor;
+	}
+	public void setCodFornecedor(int codFornecedor) {
+		this.codFornecedor = codFornecedor;
+	}
 	
-	
-	public String getConfirmaSenha() {
-		return confirmaSenha;
-	}
-	public void setConfirmaSenha(String confirmaSenha) {
-		this.confirmaSenha = confirmaSenha;
-	}
-	public String getCnpj() {
-		return cnpj;
-	}
-	public void setCnpj(String cnpj) {
-		this.cnpj = cnpj;
-	}
 	
 	
 }

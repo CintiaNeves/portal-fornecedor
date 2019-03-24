@@ -1,7 +1,6 @@
 package dominio;
 
-public enum Frete {
-	
-	
+public class Frete {
 
+	private String tipo;
 }

@@ -16,7 +16,7 @@ public class Cotacao {
 	private Calendar dataLimite;
 	private Calendar validade;
 	private Frete frete;
-	private String condPagamento;
+	private CondPagamento condPagamento;
 	private String endEntrega;
 	private List<ItemCotacao>itens;
 	
@@ -86,10 +86,10 @@ public class Cotacao {
 	public void setFrete(Frete frete) {
 		this.frete = frete;
 	}
-	public String getCondPagamento() {
+	public CondPagamento getCondPagamento() {
 		return condPagamento;
 	}
-	public void setCondPagamento(String condPagamento) {
+	public void setCondPagamento(CondPagamento condPagamento) {
 		this.condPagamento = condPagamento;
 	}
 	public String getEndEntrega() {
@@ -104,6 +104,8 @@ public class Cotacao {
 	public void setItens(List<ItemCotacao> itens) {
 		this.itens = itens;
 	}
+	
+
 
 	
 	

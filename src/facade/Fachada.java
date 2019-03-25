@@ -9,6 +9,7 @@ import dao.CadastroDAO;
 import dao.IDAO;
 import dominio.Entidadedominio;
 import negocio.CompDataCadastro;
+import negocio.FormataCnpj;
 import negocio.IStrategy;
 import negocio.ValidaSenha;
 import util.Resultado;
@@ -26,6 +27,7 @@ public class Fachada implements IFachada {
 		listStrategyAlterar = new ArrayList<IStrategy>();
 		listStrategyAlterar.add(new CompDataCadastro());
 		listStrategyAlterar.add(new ValidaSenha());
+		listStrategyAlterar.add(new FormataCnpj());
 		mapStrategy.put("ALTERAR", listStrategyAlterar);
 		mapDAO.put("CADASTRO", new CadastroDAO());
 

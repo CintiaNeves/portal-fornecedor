@@ -44,7 +44,7 @@ public class CadastroDAO extends AbstractDAO {
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
 				cadastro.setId(rs.getInt("CAD_ID"));
-				cadastro.setCodFornecedor(rs.getInt("CAD_COD_FORNECEDOR"));
+				cadastro.setCodFornecedor(rs.getInt("CAD_CODIGO_FORNECE"));
 				cadastro.setEmail(rs.getString("CAD_EMAIL"));
 			}
 			resultado.setSucesso("Cadastro encotrado com sucesso.");

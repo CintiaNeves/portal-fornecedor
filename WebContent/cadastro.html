@@ -24,6 +24,9 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
+        
+    <!-- Global JS -->
+    <link href="js/global.js" rel="stylesheet" media="all">
 </head>
 
 <body>
@@ -36,10 +39,11 @@
                     <h4 class="title">Por favor insira suas informações</h4>
                     <form action="/PortalFornecedor/cadastro" method="POST">                    
                         <div class="input-group">
-                            <input class="input--style-1" type="text" name="email" value="teste@teste.com.br">
+                            <input class="input--style-1" type="text" name="email" value="teste5@teste.com.br" READONLY>
                         </div>
+                        
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="CNPJ" name="cnpj" >
+                            <input type="text" class="form-control" name="cnpj" id="A1CGC" onkeydown="return MascaraCpfCnpj(this,event)" onkeyup="return MascaraCpfCnpj(this,event)" placeholder="CNPJ">   
                         </div>
 						<div class="row row-space">
                             <div class="col-2">

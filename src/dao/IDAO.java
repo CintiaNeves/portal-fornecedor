@@ -1,12 +1,13 @@
 package dao;
 
 import dominio.Entidadedominio;
+import util.Resultado;
 
 public interface IDAO {
 	
-	public String salvar(Entidadedominio entidade);
-	public String consultar (Entidadedominio entidade);
-	public String alterar (Entidadedominio entidade);
-	public String excluir (Entidadedominio entidade);
+	public Resultado salvar(Entidadedominio entidade);
+	public Resultado consultar (Entidadedominio entidade);
+	public Resultado alterar (Entidadedominio entidade);
+	public Resultado excluir (Entidadedominio entidade);
 	
 }

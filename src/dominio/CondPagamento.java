@@ -1,6 +1,6 @@
 package dominio;
 
-public class CondPagamento {
+public class CondPagamento extends Entidadedominio{
 
 	private String descricao;
 

@@ -1,6 +1,6 @@
 package dominio;
 
-public class Cadastro {
+public class Cadastro extends Entidadedominio{
 
 	private String cnpj;
 	private String email;

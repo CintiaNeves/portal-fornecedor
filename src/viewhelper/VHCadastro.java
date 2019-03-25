@@ -24,7 +24,7 @@ public class VHCadastro implements IViewHelper {
 		
 		
 		
-		return null;
+		return cadastro;
 	}
 
 	@Override

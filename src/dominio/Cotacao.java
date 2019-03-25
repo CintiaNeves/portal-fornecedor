@@ -3,7 +3,7 @@ package dominio;
 import java.util.Calendar;
 import java.util.List;
 
-public class Cotacao {
+public class Cotacao extends Entidadedominio{
 	
 	private boolean status;
 	private String empresa;

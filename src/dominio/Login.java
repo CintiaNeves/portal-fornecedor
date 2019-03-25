@@ -1,6 +1,6 @@
 package dominio;
 
-public class Login {
+public class Login extends Entidadedominio{
 
 	private String email;
 	private String senha;

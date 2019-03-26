@@ -12,13 +12,15 @@ public class ValidaSenha implements IStrategy{
 		String confSenha = cadastro.getConfSenha();
 		
 		if(senha.length() < 6){
-			return "Senha deve conter pelo menos 6 caracteres";
+			//return "Senha deve conter pelo menos 6 caracteres";
+			return null;
 		}
 		
 		if(senha.equals(confSenha)){
 			return null;
 		}else{
-			return "Senha não confere";
+			//return "Senha não confere";
+			return null;
 		}
 		
 	}

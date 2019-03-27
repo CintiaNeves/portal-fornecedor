@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>CotaÃ§Ã£o</title>
+<title>Cotação</title>
 
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,10 +27,10 @@
 		<div class="bg-light border-right" id="sidebar-wrapper">
 			<div class="sidebar-heading">Portal do Fornecedor</div>
 			<div class="list-group list-group-flush">
-				<a href="cotacoes.html"
+				<a href="cotacoes.jsp"
 					class="list-group-item list-group-item-action bg-light">Todas
-					as CotaÃ§Ãµes</a> <a href="cadastro.html"
-					class="list-group-item list-group-item-action bg-light">AlteraÃ§Ã£o
+					as Cotações</a> <a href="cadastro.jsp"
+					class="list-group-item list-group-item-action bg-light">Alteração
 					de Cadastro</a>
 
 			</div>
@@ -72,13 +72,50 @@
 				</div>
 			</nav>
 			<div>
-				<h4>CotaÃ§Ã£o</h4>
-				<label>NÃºmero</label> <input class="inputCabecalho" type="text">
-				<label>NÃºmero</label> <input class="inputCabecalho" type="text">
-				<label>NÃºmero</label> <input class="inputCabecalho" type="text">
+				<h4>Cotação</h4>
+				<table style="width:100%">
+				  <tr>
+				    <td>
+				    	<label for="numero">Número</label>
+				    	<input name="numero" id="numero" />
+				    </td>
+				    <td>
+				    	<label for="comprador">Comprador</label>
+				    	<input name="comprador" id="comprador" />
+				    </td> 
+				  </tr>
+				  <tr>
+				    <td>	
+				    	<label for="data-emissao">Data Emissão</label>
+				    	<input type="date" name="data-emissao" id="data-emissao" />
+				   	</td>
+				    <td>
+				    	<label for="data-limite">Data Limite</label>
+				    	<input type="date" name="data-limite" id="data-limite" />
+					</td> 
+				  </tr>
+				  <tr>
+				    <td>
+				    	<label for="frete">Frete</label>
+				    	<input name="frete" id="frete" />
+				    </td>
+				    <td>
+				    	<label for="condicao-pagamento">Condição de Pagamento</label>
+				    	<input name="condicao-pagamento" id="condicao-pagamento" align="right"/>
+				    </td>
+				  </tr>
+				</table>
+				<table style="width:100%">
+				  <tr>
+				  	<td>
+				  		<label for="endereco-entrega">Endereço de Entrega</label>
+				  		<textarea rows="3" name="endereco-entrega" id="endereco-entrega" ></textarea>
+				  	</td>
+				  </tr>
+				</table>
 			</div>
 			<div class="container-fluid">
-				<h6 class="mt-4">Itens das CotaÃ§Ã£o</h6>
+				<h4 class="mt-4">Itens das Cotação</h4>
 				<div class="table-responsive text-nowrap">
 
 					<table class="table">
@@ -87,15 +124,15 @@
 								<th scope="col">Item</th>
 								<th scope="col">Quantidade</th>
 								<th scope="col">Unidade</th>
-								<th scope="col">NÃºmero SC</th>
-								<th scope="col">CÃ³digo Produto</th>
-								<th scope="col">DescriÃ§Ã£oooooooooooooooooooooooo</th>
+								<th scope="col">Número SC</th>
+								<th scope="col">Código do Produto</th>
+								<th scope="col">Descrição</th>
 								<th scope="col">Entrega</th>
-								<th scope="col">$ UnitÃ¡rio</th>
+								<th scope="col">$ Unitário</th>
 								<th scope="col">Aliq. IPI (%)</th>
 								<th scope="col">Aliq. ICMS (%)</th>
-								<th scope="col">Freteeeee</th>
-								<th scope="col">Totalllllllll</th>
+								<th scope="col">Frete</th>
+								<th scope="col">Total</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -109,8 +146,9 @@
 									value="32201" READONLY></td>
 								<td><input type="text" style="border: 0;" name="codProduto"
 									value="14900037" READONLY></td>
-								<td><input type="text" style="border: 0;" name="descricao"
-									value="MOUSE MOCROSOFT" READONLY></td>
+								<td> 
+									MOUSE MICROSOFT
+								</td>
 								<td class="td-date"><input type="date" style="border: 0;"
 									name="entrega"></td>
 								<td><input type="text" style="border: 0;"
@@ -189,7 +227,6 @@
 			$("#wrapper").toggleClass("toggled");
 		});
 	</script>
-
 </body>
 
 </html>

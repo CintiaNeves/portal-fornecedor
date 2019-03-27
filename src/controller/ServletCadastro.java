@@ -56,11 +56,11 @@ public class ServletCadastro extends HttpServlet {
 
 		ICommand command = mapCommand.get(operacao);
 		Resultado resultado = command.executar(entidade);
-		if (resultado.isErro()) {
-			request.setAttribute("erro", resultado.getMensagem());
-			request.getRequestDispatcher("cadastro.html").forward(request, response);
-		} else {
-			request.getRequestDispatcher("cotacoes.html").forward(request, response);
-		}
+		
+		/**
+		 * chama vh e insere os dados na resposta,
+		 * valida erro
+		 */
+		viewHelper.setView(resultado, request, response);
 	}
 }

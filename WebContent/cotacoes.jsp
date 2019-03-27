@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>CotaÃ§Ãµes</title>
+  <title>Cotações</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,19 +21,12 @@
 <body>
 
   <div class="d-flex" id="wrapper">
-
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Portal do Fornecedor</div>
-      
-      <form action="/PortalFornecedor/cadastro" method="post">
-      	<button>teste</button>
-      </form>
-      
-      
-      
+            
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">AlteraÃ§Ã£o de Cadastro</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Alteração de Cadastro</a>
 
       </div>
     </div>
@@ -73,7 +66,7 @@
       </nav>
 
       <div class="container-fluid">
-        <h2 class="mt-4">CotaÃ§Ãµes</h2>
+        <h2 class="mt-4">Cotações</h2>
 		<div class="table-responsive text-nowrap">
 		
 		  <table class="table">
@@ -81,18 +74,18 @@
 		      <tr>
 		      	<th scope="col"></th>
 		        <th scope="col">Staus</th>
-		        <th scope="col">NÃºmero</th>
+		        <th scope="col">Número</th>
 		        <th scope="col">Empresa</th>
 		        <th scope="col">Fornecedor</th>
 		        <th scope="col">Comprador</th>
-		        <th scope="col">Data EmissÃ£o</th>
+		        <th scope="col">Data Emissão</th>
 		        <th scope="col">Data Limite</th>
 
 		      </tr>
 		    </thead>
 		    <tbody>
 		      <tr>
-		        <th scope="row" class="td-padding"><a href="cotacao.html">Cotar</a></th>
+		        <th scope="row" class="td-padding"><a href="cotacao.jsp">Cotar</a></th>
 		        <td><input type="text" style="border:0;" name="status" value="Aberto" READONLY></td>
 		      	<td><input type="text" style="border:0;" name="numero" value="000134" READONLY></td>
 		      	<td><input type="text" style="border:0;" name="empresa" value="IBAR" READONLY></td>
@@ -102,7 +95,7 @@
 		      	<td class="td-date"><input type="date" style="border:0;" name="dtLimite" READONLY></td>
 		      </tr>
 		      <tr>
-		        <th scope="row" class="td-padding"><a href="cotacao.html">Cotar</a></th>
+		        <th scope="row" class="td-padding"><a href="cotacao.jsp">Cotar</a></th>
 		        <td><input type="text" style="border:0;" name="status" value="Aberto" READONLY></td>
 		      	<td><input type="text" style="border:0;" name="numero" value="000135" READONLY></td>
 		      	<td><input type="text" style="border:0;" name="empresa" value="NUTEC" READONLY></td>
@@ -112,7 +105,7 @@
 		      	<td class="td-date"><input type="date" style="border:0;" name="dtLimite" READONLY></td>
 		      </tr>
 		      <tr>
-		        <th scope="row" class="td-padding"><a href="cotacao.html">Cotar</a></th>
+		        <th scope="row" class="td-padding"><a href="cotacao.jsp">Cotar</a></th>
 		        <td><input type="text" style="border:0;" name="status" value="Aberto" READONLY></td>
 		      	<td><input type="text" style="border:0;" name="numero" value="000136" READONLY></td>
 		      	<td><input type="text" style="border:0;" name="empresa" value="GLOBAL SERVICE" READONLY></td>
@@ -128,7 +121,6 @@
       </div>
     </div>
     <!-- /#page-content-wrapper -->
-<footer><h6>Teste</h6></footer>
   </div>
   <!-- /#wrapper -->
   

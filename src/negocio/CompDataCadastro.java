@@ -1,7 +1,6 @@
 package negocio;
 
 
-import dominio.Cadastro;
 import dominio.Entidadedominio;
 
 public class CompDataCadastro implements IStrategy{

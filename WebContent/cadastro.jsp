@@ -3,7 +3,7 @@
 
 <head>
     <!-- Required meta tags-->
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Colorlib Templates">
     <meta name="author" content="Colorlib">
@@ -36,14 +36,13 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Cadastro</h2>
-                    <h4 class="title">Por favor insira suas informações</h4>
+                    <h4 class="title">Por favor insira suas informac�es</h4>
                     <form action="/PortalFornecedor/cadastro" method="POST">                    
                         <div class="input-group">
                             <input class="input--style-1" type="text" name="email" value="teste5@teste.com.br" READONLY>
                         </div>
-                        
                         <div class="input-group">
-                            <input type="text" class="form-control" name="cnpj" id="A1CGC" onkeydown="return MascaraCpfCnpj(this,event)" onkeyup="return MascaraCpfCnpj(this,event)" placeholder="CNPJ">   
+                            <input type="text" name="cnpj" id="A1CGC" onkeydown="return MascaraCpfCnpj(this,event)" onkeyup="return MascaraCpfCnpj(this,event)" placeholder="CNPJ" style="color: #666">   
                         </div>
 						<div class="row row-space">
                             <div class="col-2">

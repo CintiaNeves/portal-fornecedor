@@ -33,8 +33,8 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Login</h2>
-                    <h4 class="title">Realize a autenticaÃ§Ã£o para acessar suas cotaÃ§Ãµes</h4>
-                    <form action="/PortalFornecedor/cadastro" method="POST">
+                    <h4 class="title">Realize a autenticão para acessar suas cotações</h4>
+                    <form action="/PortalFornecedor/login" method="POST">
                         <div class="input-group">
                             <input class="input--style-1" type="email" placeholder="e-mail@fornecedor.com.br" name="email">
                         </div>
